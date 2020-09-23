@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="datetime">
+        <span class="date"></span><span class="divider"> - </span><span class="time"></span>
+    </div>
+    <div class="container">
+        <div class="new-input">
+            <input type="text" class="input-bar" maxlength="24" placeholder="Enter a new item...">
+            <button type="submit" class="submit-btn">Add</button>
+        </div>
+        <div class="list">
+            <div class="list__head">
+                <h2 class="list__head__title">Things to do:</h2>
+                <button type="button" class="clear-btn">Clear</button>
+            </div>
+            <ul>
+               <!--
+                Sample of generated list item:
+                <li class="todo"><p class="todo-text">Test 1<span><button class="delete delete-btn"><img src="images/icon-delete.svg" class="delete delete-icon" alt="Delete icon"></button></span></p></li>
+                -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
