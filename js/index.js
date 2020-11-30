@@ -11,8 +11,8 @@ const ul = document.querySelector("ul");
 
 
 /*** EVENT LISTENERS ***/
-// On page load, prints all todos stored in array
-window.onload = () => todos.forEach(e => printTodo(e));
+// On page load, clears input field
+window.onload = () => input.value = "";
 
 // Runs printTodo function if input field is populated and "add" button is clicked or enter key is pressed
 btnSubmit.addEventListener("click", function(){
@@ -36,6 +36,8 @@ list.addEventListener("click", function(element){
         completeTodo(element);
     }
 });
+
+
 
 // Clear button
 btnClear.addEventListener("click", clearList);
